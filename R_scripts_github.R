@@ -114,7 +114,10 @@ metadata$class<-metadata$AVSc
 
 # creating a 'SummarizedExperiment' object and log transform normalized counts:
 SE<-DaMiR.makeSE(Norm_Counts, metadata)
-data_norm <- DaMiR.normalization(SE, minCounts=0, fSample=0.1, type="vst",
+data_norm <- DaMiR.normalization(SE, 
+                                 minCounts=0, 
+                                 fSample=0.1, 
+                                 type="vst",
                                  hyper = "no")
 
 # set.seed to reproduce result:
