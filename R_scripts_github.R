@@ -123,7 +123,7 @@ data_norm <- DaMiR.normalization(SE,
 # set.seed to reproduce result:
 set.seed(1)
 
-# Implement a Genetic Algorithm to select the top 100 informative features:
+# Implement a Genetic Algorithm to select 100 informative features:
 res_GA <- GARS_GA(data = data_norm,
                   classes = colData(data_norm),
                   chr.num = 1000, 
