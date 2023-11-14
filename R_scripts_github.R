@@ -28,7 +28,7 @@ rnapower(depth=10, # number of reads to call a gene expressed
          n=66, # number of samples in the first group
          n2=44,# number of samples in the second group
          cv=0.2, # estimated from previous work
-         effect=1.4, # effect size, i.e., the fold change
+         effect=1.4, # effect size, i.e., the fold change (linear scale)
          alpha= .001)
 
 ################################################################################
